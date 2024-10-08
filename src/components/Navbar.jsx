@@ -14,6 +14,9 @@ const Navbar = () => {
         <Link href="/Pages/Delivered_Projects">Delivered Projects</Link>
       </li>
       <li>
+        <Link href="/Pages/Add_Employee">Add Employee</Link>
+      </li>
+      <li>
         <Link href="/Pages/Total_Employee">Total Employee</Link>
       </li>
     </>
@@ -41,7 +44,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-2"
             >
               {navLinks}
             </ul>
@@ -49,10 +52,10 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl">EMS</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+          <ul className="menu menu-horizontal space-x-2">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <Link href="/Login">Login</Link>
+          <Link href="/Pages/Login">Login</Link>
         </div>
       </div>
     </div>
